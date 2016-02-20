@@ -17,6 +17,7 @@ def main():
     Text(Point(20,30), " 10.0K").draw(win)
 
     # Draw bar for initial pricipal
+    
     height = principal * 0.02
     bar = Rectangle(Point(40,230), Point(65, 230-height))
     bar.setFill("green")
