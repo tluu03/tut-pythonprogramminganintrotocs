@@ -18,7 +18,7 @@ def main():
     # wait for a mouse click
     win.getMouse()
 
-    # convert input
+    # convert inputmin(
     celsius = eval(input.getText())
     fahrenheit = 9.0/5.0 * celsius + 32
 
