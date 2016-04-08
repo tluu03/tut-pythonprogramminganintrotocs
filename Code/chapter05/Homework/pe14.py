@@ -5,20 +5,25 @@
 #print three numbers showing the count of lines
 #prints the words and characters in the file
 def main():
-    filename = input("Enter filename: ")
+    print('This program will count words and show the details of each file.\n')
+     
+    filename = input('Type in the filename: ')
+     
     infile = open(filename,'r')
-    wordCount = 0
-    characterCount = 0
-    lineCount = 0
-
-    for line in infile:
-        lineCount = lineCount+1
-        characterCount = characterCount+1
-    len(line)
-    wordCount = wordCount + len(line.split())
+     
+    lines,words,chars = 0,0,0
+     
+    for i in infile:
+        lines = lines + 1
+        chars = chars + len(i[:-1])
+        words = words + len(i.split())
+     
     infile.close()
+     
+    print('"{}" has {} lines, {} words and {} characters.'
+          .format(filename,lines,words,chars))        
 
-    print("Words in file: ",wordCount)
-    print("Characters in the file: ",characterCount)
-    print("Lines in the file; ",lineCount)
+     
+
+
     
