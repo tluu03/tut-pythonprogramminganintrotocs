@@ -1,19 +1,19 @@
-# happy.py
-
+#happy.py
 def happy():
     print("Happy Birthday to you!")
 
 def sing(person):
     happy()
     happy()
-    print("Happy birthday, dear", person + ".")
+    print("Happy birthday, dear",person + ".")
     happy()
-
 def main():
-    sing("Fred")
+    sing("cody")
     print()
-    sing("Lucy")
+    sing("lily")
     print()
-    sing("Elmer")
+    sing("kaily")
+    
+    
 
-main()
+        
